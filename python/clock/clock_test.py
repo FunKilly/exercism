@@ -42,7 +42,6 @@ class ClockTest(unittest.TestCase):
 
     def test_negative_hour(self):
         self.assertEqual(str(Clock(-1, 15)), '23:15')
-
     def test_negative_hour_rolls_over(self):
         self.assertEqual(str(Clock(-25, 0)), '23:00')
 
